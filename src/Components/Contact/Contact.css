@@ -1,0 +1,77 @@
+/* === Main Container === */
+.contact-container {
+  margin: 4rem 0;
+  padding: 0 2rem;
+  position: relative;
+  font-family: 'Poppins', sans-serif;
+}
+
+.contact-container h5 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 3rem;
+  text-align: center;
+  color: #ffffff;
+  position: relative;
+}
+
+/* === Content Grid === */
+.contact-content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.contact-left,
+.contact-right {
+  flex: 1;
+  min-width: 300px;
+}
+
+/* === Animations added via framer-motion in JSX === */
+
+/* === Responsive Media Queries === */
+@media (max-width: 1024px) {
+  .contact-container h5 {
+    font-size: 1.5rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .contact-content {
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-content {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .contact-left,
+  .contact-right {
+    width: 100%;
+  }
+
+  .contact-container h5 {
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 420px) {
+  .contact-container {
+    padding: 0 1rem;
+  }
+
+  .contact-container h5 {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .contact-content {
+    gap: 1.5rem;
+  }
+}
