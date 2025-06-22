@@ -83,17 +83,16 @@ export const WORK_EXPERIENCES=[
             { text: "View Certificate", link: "https://drive.google.com/file/d/1cp2dxpBHMe2-9G6OH6VdWPtIPaDp4_oq/view?usp=sharing" }
         ],
     },
-    // {
-    //     title:" DATA SCIENCE AND DATA ANALYTICS Intern at  NOVITECHPVT.LTD ",
-    //     date:" JUNE-JULY 2023",
-    //     domain:"Data Science",  
-    //     responsibilities:[
-    //         " Gathered, organized, and cleaned data from multiple sources for further analysis.",
-    //         "Translated raw data into meaningful information using statistical techniques.",
-    //         "  Conductedexploratory analysis of complex datasets using Python libraries such as Numpy and Pandas.",
-    //         " Builtvisualizations that enabled users to quickly interpret results from complex analyses."
-    //     ],
-    // },
+    {
+        title: "Head of Technical & Design Team at Let's Talk DTU",
+        domain: "Leadership & Design",
+        date: "Jan 2024 – Present",
+        responsibilities: [
+            "Led the technical and design initiatives for Let's Talk DTU, focusing on consistent branding and visual identity across digital platforms.",
+            "Designed and developed standees, posters, and promotional materials, significantly improving event engagement and outreach.",
+            "Managed and curated technical content for official social media handles, resulting in increased follower growth and interaction."
+        ]
+        },
     // {
     //     title:"  Data Analysis Intern  at   TECHVOLTPVT.LTD",
     //     date:"  MAR- APRIL2023",
@@ -117,7 +116,7 @@ export const Project_details=[
     "Designed login and signup features with local storage to manage user accounts.",
     "Enhanced UX with a mobile-friendly interface using CSS Grid and media queries."
   ],
-  image: "./Assets/Frontend/W-1.PNG", // Add your main preview image path here
+  image: "./Assets/Frontend/Wealthify.png", // Add your main preview image path here
   images: [
     "./Assets/Frontend/W-2.PNG",
     "./Assets/Frontend/W-3.PNG",
@@ -147,45 +146,41 @@ export const Project_details=[
   codeLink: "https://github.com/Gaurav075/Chat-App.git" // Replace with specific repo if different
 },
     {
-        title:"Luthen Analytics",
-        domain:"  Web Development",
-        Description:[
-           "I was responsible for designing and developing the official website for Luthen Analytics, focusing on creating a modern, user-friendly, and responsive platform that effectively showcases the company’s data analytics solutions. My work included:",
-"Building a clean, professional UI/UX that reflects the brand’s innovative approach.",
-"Implementing responsive design to ensure seamless experience across devices (desktop, tablet, mobile).",
-"Developing interactive and visually appealing data visualization demos to highlight core features.",
-"Optimizing website performance for fast loading and smooth navigation.",
-"Integrating SEO best practices to improve online visibility and search ranking.",
-"Collaborating closely with the analytics and marketing teams to align website content with business goals.",
-"Using React.js (or your tech stack) and modern web development tools to ensure maintainability and scalability.",
-"This project helped establish Luthen Analytics’ online presence with a forward-thinking website that supports lead generation and communicates the company’s expertise effectively."],
- image: "./Assets/WebDevelopment/Luthen/0.jpg",
-        images: [
-     "./Assets/WebDevelopment/Luthen/1.png",
-     "./Assets/WebDevelopment/Luthen/2.png",
-     "./Assets/WebDevelopment/Luthen/3.png",
-     "./Assets/WebDevelopment/Luthen/4.png",
-     "./Assets/WebDevelopment/Luthen/5.png", "./Assets/WebDevelopment/Luthen/6.png", "./Assets/WebDevelopment/Luthen/6.png", "./Assets/WebDevelopment/Luthen/7.png", "./Assets/WebDevelopment/Luthen/8.png",],
-      liveLink: "https://www-luthen-analytics-com.onrender.com",
-        codeLink: "https://github.com/akashak0823/Analyz",
+    title: "QuickJot – Note Making Application",
+    domain: "Full Stack",
+    Description: [
+        "Developed a full-stack note-making app with features to create, edit, delete, and prioritize notes.",
+        "Implemented secure authentication and password reset functionality using JWT and bcrypt.",
+        "Integrated priority-based scheduling and user-specific note storage with MongoDB.",
+        "Designed a clean and responsive interface using Tailwind CSS and deployed via Vercel & Render."
+    ],
+    image: "./Assets/Fullstack/Q-1.PNG", // Add your preview image here
+    images: [
+        "./Assets/Fullstack/Q-2.PNG",
+        "./Assets/Fullstack/Q-3.PNG",
+        "./Assets/Fullstack/Q-4.PNG"
+    ],
+    liveLink: "https://quick-jot-nine.vercel.app/",
+    codeLink: "https://github.com/Gaurav075/QuickJot.git" // Replace with actual GitHub repo link
     },
     {
-        title:"   Weather Forecasting Using Machine Learning",
-        domain:"  Machine Learning",
-        Description:[
-           "I developed a weather forecasting system using machine learning in Python that predicts future weather conditions such as temperature, humidity, wind speed, and rainfall based on historical weather data. This project demonstrates the application of data science in real-world environmental forecasting.",
-"Key Contributions",
-"Collected and preprocessed historical weather datasets from trusted sources (e.g., NOAA, Kaggle).",
-"Engineered relevant features like time-based patterns, moving averages, and lag values to improve model accuracy.",
-"Implemented regression models such as Linear Regression, Random Forest Regressor, and XGBoost to predict weather parameters.",
-"Evaluated models using performance metrics like RMSE, MAE, and R² score for accurate and reliable forecasting.",
-"Visualized predictions and actual weather trends using Matplotlib and Seaborn to showcase model performance.",
-"Designed a simple command-line interface (or Flask web app, if applicable) to input date/location and get forecast results.",
-"Tech Stack: Python, Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn, Jupyter Notebook",
-"This project highlights my ability to apply machine learning techniques to solve real-world problems, showcasing strong skills in data preprocessing, model training, and result interpretation within the context of environmental analytics."
-           , ],
-        image: "./Assets/1.jpg",
-        codeLink: "https://github.com/akashak0823/iris_prediction",
-    },
+  title: "Inkspire – Full Stack Blog Application",
+  domain: "Full Stack",
+  Description: [
+    "Developed a complete blog platform using the MERN stack with full CRUD functionality for blog posts.",
+    "Implemented secure user authentication and protected routes using JWT and bcrypt.",
+    "Integrated a rich text editor for formatted content creation and MongoDB for user-specific blog storage.",
+    "Designed a fully responsive and clean UI with Tailwind CSS, deployed on Vercel (frontend) and Render (backend)."
+  ],
+  image: "./Assets/Fullstack/I-1.PNG", // Add your preview image here
+  images: [
+    "./Assets/Fullstack/I-2.PNG",
+    "./Assets/Fullstack/I-3.PNG",
+    "./Assets/Fullstack/I-4.PNG"
+  ],
+  liveLink: "https://blog-post-theta-three.vercel.app/",
+  codeLink: "https://github.com/Gaurav075/Blog_Post.git" // Replace with your actual GitHub repo link
+},
+
 
 ]

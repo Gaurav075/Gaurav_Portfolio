@@ -11,11 +11,11 @@
   cursor: pointer;
 }
 .project-thumb {
-  width: 100%;
-  height: 180px;
+ width: 100%;
+  height: 100%;
   object-fit: cover;
   border-radius: 1rem;
-  margin-bottom: 1rem;
+  display: block;
 }
 .project-link {
   margin-top: 1rem;
@@ -30,7 +30,16 @@
 .project-link:hover {
   color: #67c7ff;
 }
+.project-card h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
 
+.project-domain {
+  font-size: 0.95rem;
+  color: #ccc;
+}
 .project-modal {
   position: fixed;
   top: 0;
@@ -84,4 +93,14 @@
   margin-top: 1rem;
   padding-left: 1.2rem;
   line-height: 1.6;
+}
+
+.card-image-container {
+  width: 100%;
+  height: 180px;
+  overflow: hidden;
+  border-radius: 1rem;
+}
+.card-text {
+  margin-top: 1rem;
 }

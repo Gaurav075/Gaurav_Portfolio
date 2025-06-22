@@ -33,11 +33,11 @@ const Navbar = () => {
             </ScrollLink>
           </li>
         ))}
-        <li>
+        {/* <li>
           <button className='menu-item' onClick={toggleModal}>
             Contact
           </button>
-        </li>
+        </li> */}
 
             {/* <button className='contact-btn' onClick={toggleModal}>Hire me</button> */}
           </ul>

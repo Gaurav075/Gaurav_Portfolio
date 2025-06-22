@@ -6,7 +6,7 @@ import './Projects.css';
 const domainTitles = ['Frontend', 'Full Stack', 'Data Analysis'];
 
 const Projects = () => {
-  const [activeDomain, setActiveDomain] = useState('Web Development');
+  const [activeDomain, setActiveDomain] = useState('Full Stack');
   const [modalProject, setModalProject] = useState(null);
 
   const openModal = (project) => setModalProject(project);

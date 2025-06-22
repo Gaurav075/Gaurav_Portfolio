@@ -8,13 +8,12 @@ const ProjectCard = ({ details }) => {
 
   return (
     <>
-      <motion.div
-        className='project-card'
-        whileHover={{ scale: 1.03 }}
-        whileTap={{ scale: 0.98 }}
-      >
+          <motion.div className='project-card' whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.98 }}>
+      <div className="card-image-container">
         <img src={details.image || '/Assets/default.jpg'} alt={details.title} className='project-thumb' />
+      </div>
 
+      <div className="card-text">
         <h3>{details.title?.trim()}</h3>
         <p className='project-domain'>{details.domain?.trim()}</p>
 
@@ -22,7 +21,10 @@ const ProjectCard = ({ details }) => {
           <span>Learn More</span>
           <ArrowRight size={20} />
         </div>
-      </motion.div>
+      </div>
+    </motion.div>
+
+
 
       <AnimatePresence>
         {isOpen && (
