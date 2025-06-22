@@ -12,6 +12,8 @@ const ContactForm = () => {
 
   const [errors, setErrors] = useState({});
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [buttonText, setButtonText] = useState('SEND');
+
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -46,10 +48,11 @@ const ContactForm = () => {
     }
     setErrors({});
     setIsSubmitting(true);
+    setButtonText('Sending...');
 
     try {
       const params = new URLSearchParams(formData).toString();
-      const url = `https://script.google.com/macros/s/AKfycbxGC7ZUl-Q3yC1lw2kdVt53q4xsU9EYscqBjcVAE8evrmd-8SAiKSXA6haMo7UKq1IIRA/exec?${params}`;
+      const url = `https://script.google.com/macros/s/AKfycbzchWV4tnVE_3AulLkSWhmBy8ZfgqiM5qkSt3KnaFbekTid36KkdXMCvPsJ06pd8Ous8g/exec?${params}`;
 
       const response = await fetch(url, {
         method: 'GET',
@@ -64,8 +67,14 @@ const ContactForm = () => {
         email: '',
         message: '',
       });
+
+       setButtonText('Sent ✅');
+    setTimeout(() => {
+      setButtonText('SEND');
+    }, 3000); // 3 seconds
     } catch (error) {
       toast.error('Submission failed. Please try again.');
+      setButtonText('SEND');
     } finally {
       setIsSubmitting(false);
     }
@@ -117,7 +126,7 @@ const ContactForm = () => {
         {errors.message && <span className="error">{errors.message}</span>}
 
         <button type="submit" disabled={isSubmitting}>
-          {isSubmitting ? 'Sending...' : 'SEND'}
+          {buttonText}
         </button>
       </form>
     </div>

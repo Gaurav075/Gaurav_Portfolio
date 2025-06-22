@@ -24,20 +24,6 @@ const Footer = () => {
           
         </div>
 
-        <div className="footer-center">
-        <a
-          href="https://youtube.com/@gauravgupta2850?feature=shared"
-          target="_blank"
-          rel="noopener noreferrer"
-          className='nounderline'
-        >
-          <button className="youtube-subscribe-btn">
-            <FaYoutube className="youtube-icon" />
-            Subscribe on YouTube
-          </button>
-        </a>
-      </div>
-
         <div className="footer-right">
           <a
             href="mailto:officialgauravgupta3@gmail.com"
@@ -62,6 +48,14 @@ const Footer = () => {
             aria-label="LinkedIn"
           >
             <FaLinkedin />
+          </a>
+           <a
+            href="https://youtube.com/@gauravgupta2850?feature=shared"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="YouTube"
+          >
+            <FaYoutube />
           </a>
         </div>
       </div>

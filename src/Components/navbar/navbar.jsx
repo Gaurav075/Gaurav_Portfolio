@@ -18,9 +18,9 @@ const Navbar = () => {
       <ContactModal isOpen={showModal} onClose={toggleModal} />
       <nav className='nav-wrapper'>
         <div className='nav-content'>
-          <a href='/'><img className='logo' src="./Assets/Gaurav Logo.png" alt='Logo' /></a>
+          <a href='/'><img className='logo' src="./Assets/logo.jpg" alt='Logo' /></a>
           <ul>
-           {['home', 'skills', 'projects', 'experience'].map((item) => (
+           {['home', 'skills', 'projects', 'experience','Contact'].map((item) => (
           <li key={item}>
             <ScrollLink
               className='menu-item'

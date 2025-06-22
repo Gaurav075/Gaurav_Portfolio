@@ -116,7 +116,7 @@ export const Project_details=[
     "Designed login and signup features with local storage to manage user accounts.",
     "Enhanced UX with a mobile-friendly interface using CSS Grid and media queries."
   ],
-  image: "./Assets/Frontend/Wealthify.png", // Add your main preview image path here
+  image: "./Assets/Frontend/W-1.png", // Add your main preview image path here
   images: [
     "./Assets/Frontend/W-2.PNG",
     "./Assets/Frontend/W-3.PNG",
@@ -154,7 +154,7 @@ export const Project_details=[
         "Integrated priority-based scheduling and user-specific note storage with MongoDB.",
         "Designed a clean and responsive interface using Tailwind CSS and deployed via Vercel & Render."
     ],
-    image: "./Assets/Fullstack/Q-1.PNG", // Add your preview image here
+    image: "./Assets/Fullstack/Q-1.png", // Add your preview image here
     images: [
         "./Assets/Fullstack/Q-2.PNG",
         "./Assets/Fullstack/Q-3.PNG",
@@ -172,7 +172,7 @@ export const Project_details=[
     "Integrated a rich text editor for formatted content creation and MongoDB for user-specific blog storage.",
     "Designed a fully responsive and clean UI with Tailwind CSS, deployed on Vercel (frontend) and Render (backend)."
   ],
-  image: "./Assets/Fullstack/I-1.PNG", // Add your preview image here
+  image: "./Assets/Fullstack/I-1.png", // Add your preview image here
   images: [
     "./Assets/Fullstack/I-2.PNG",
     "./Assets/Fullstack/I-3.PNG",
